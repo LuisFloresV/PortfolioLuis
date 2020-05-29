@@ -1,0 +1,113 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat|Quicksand"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="{% static 'css/minireset.min.css' %}" />
+    <link rel="stylesheet" href="{% static 'css/main.css' %}" />
+    <script src="https://kit.fontawesome.com/a7788803cb.js" crossorigin="anonymous"></script>
+
+    <title>Luis Flores - Web Developer</title>
+  </head>
+  <body>
+    <div class="wallpaper"></div>
+    <div class="content">
+      <aside class="side">
+        <figure class="picture">
+          <div class="picture-shadow"></div>
+          <img
+            id="pictureImage"
+            class="picture-image"
+            src="{% static 'img\avataaars.png' %}"
+            alt="Avatar Luis"
+            width="320"
+            height="320"
+          />
+        </figure>
+      </aside>
+      <main class="about">
+        <h1 class="name">Hola, soy Luis Flores</h1>
+        <p class="job">Desarrollador Web</p>
+        <hr class="hr" />
+        <div class="description">
+          <p>
+            Soy un programador apasionado que busca ayudar a los pequeños
+            negocios, a través de soluciones efectivas.
+          </p>
+          <ul class="social">
+          
+            <li>
+              <a href="https://github.com/LuisFloresV"><i class="fab fa-github"></i> </a>
+            </li>
+          </ul>
+        </div>
+      </main>
+    </div>
+    
+    <div class="lol">
+        <h1>Acerca de mi</h1>
+    <div class="me">
+      <div class="card">
+        <h1><i class="fas fa-paint-brush"></i> Frontend skills</h1>
+        <p> <i class="fab fa-css3"></i> CSS</p>
+        <p> <i class="fab fa-html5"></i> HTML</p>
+        <p> <i class="fab fa-bootstrap"></i> Bootstrap</p>
+        <p><i class="fab fa-js-square"></i> Javascript</p>
+      </div>
+      <div class="card">
+        <h1><i class="fas fa-server"></i> Backend skills</h1>
+        <p> <i class="fab fa-python"></i> Python/Django</p>
+        <p><i class="far fa-paper-plane"></i> Django Rest Framework</p>
+        <p><i class="fas fa-database"></i> PostgreSQL/Sqlite</p>
+        <p> <i class="fab fa-java"></i> Java (JSF, JSP) </p>
+        <p></p>
+      </div>
+      <div class="card">
+        <h1><i class="fas fa-list"></i> Otros</h1>
+        <p><i class="fab fa-adobe"></i> Illustrator & Photoshop</p>
+        <p><i class="fas fa-terminal"></i> Heroku</p>
+        <p><i class="fab fa-git"></i> Git</p>
+        <p><i class="fab fa-github"></i> GitHub & BitBucket</p>
+      </div>
+        </div>
+    </div>
+   
+    <div class="lol2">
+        <h1>Mi trabajo</h1>
+    <div class="me">
+        <div class="card2">
+            <img
+            id="projectImage"
+            class="picture-work"
+            src="{% static 'img\taskapp.png' %}"
+            alt="Avatar Luis"
+            width="600"
+          />
+          <p> Maneja de manera rapida tu tiempo con esta agenda. Solo registrate y comienza a utilizarla!</p>
+         <center> <a class="button" href="https://taskdoapp.herokuapp.com/">        Ir a pagina:)      </a>
+          <a class="button" href="https://github.com/LuisFloresV/TaskApp">        Ver repositorio     </a></center>
+        </div>
+        <div class="card2">
+                <img
+                id="projectImage"
+                class="picture-work"
+                src="{% static 'img\Food-App.png' %}"
+                alt="Avatar Luis"
+                width="600"
+              />
+              <p> Consulta de manera rapida una receta con esta App. Todo a través de una API.</p>
+              <center> <a class="button" href="https://foodapprecipeapi.herokuapp.com/">        Ir a pagina:)      </a>
+                <a class="button" href="https://github.com/LuisFloresV/FoodApp">        Ver repositorio     </a></center>
+        </div>
+    </div>
+    </div>
+    <div class="bottom">
+        <h1>Copyright @ 2020 Luis Flores.</h1>
+    </div>
+  </body>
+</html>

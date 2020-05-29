@@ -1,0 +1,303 @@
+html {
+  background-color: #343a40;
+  background-image: linear-gradient(to bottom right, #495057, #f8f9fa);
+  color: #fff;
+  font-family: "Quicksand", sans-serif;
+  font-size: 16px;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  line-height: 1.5;
+  min-height: 100vh;
+  min-width: 300px;
+  overflow-x: hidden;
+  text-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
+}
+
+.name {
+  font-size: 2.5rem;
+  line-height: 1.125;
+  margin-bottom: 0.5rem;
+}
+
+.job,
+.button {
+  font-family: "Montserrat", "Quicksand", sans-serif;
+  letter-spacing: 0.5em;
+  text-transform: uppercase;
+}
+
+.job {
+  color: #343a40;
+  font-size: 1rem;
+}
+a {
+  color: currentColor;
+  cursor: pointer;
+  text-decoration: none;
+}
+.button,
+.social a {
+  transform-origin: center;
+  transition-duration: 100ms;
+}
+
+.wallpaper,
+.picture-shadow,
+.picture-image {
+  display: block;
+  height: 100%;
+  left: 0;
+  top: 0;
+  width: 100%;
+}
+
+.description {
+  font-size: 1.5rem;
+}
+
+.hr {
+  background-color: #343a40;
+  border: none;
+  content: "";
+  height: 1px;
+  margin-bottom: 1.5rem;
+  margin-top: 1.5rem;
+  transform-origin: center left;
+  width: 4rem;
+}
+.social {
+  display: flex;
+  margin-top: 1.5rem;
+}
+.social li {
+  height: 2rem;
+  margin-right: 0.5rem;
+  text-align: center;
+  width: 2rem;
+}
+.social a {
+  align-items: center;
+  display: flex;
+  font-size: 1.5rem;
+  height: 2rem;
+  justify-content: center;
+  opacity: 0.5;
+  transition-property: opacity, transform;
+  width: 2rem;
+  will-change: opacity, transform;
+}
+
+.social a:hover {
+  opacity: 1;
+  transform: scale(1.25);
+}
+
+.social a:active {
+  opacity: 1;
+  transform: scale(1.1);
+}
+.wallpaper {
+  background-image: url("/static/img/wallpaper.jpg");
+  background-position: center;
+  background-size: cover;
+  opacity: 0.2;
+  position: fixed;
+}
+
+.picture {
+  padding-top: 100%;
+  position: relative;
+  width: 100%;
+}
+
+.picture-shadow {
+  border-radius: 290486px;
+  background-image: radial-gradient(#000 0%, rgba(0, 0, 0, 0) 70%);
+  position: absolute;
+  top: 10%;
+}
+
+.picture-image {
+  border-radius: 290486px;
+  position: absolute;
+}
+
+.content {
+  display: flex;
+  position: relative;
+  min-height: 95vh;
+}
+
+.side {
+  max-height: 20rem;
+  max-width: 20rem;
+}
+
+.about {
+  max-width: 26rem;
+}
+
+.button {
+ 
+  background-color: #fff;
+  border-radius: 290486px;
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
+  color: #343a40;
+  display: inline-block;
+  font-size: 0.700rem;
+  line-height: 1;
+  padding: 1em 2em;
+  margin-bottom: 5px;
+  text-shadow: none;
+  transition-property: box-shadow, transform;
+  user-select: none;
+  vertical-align: top;
+  white-space: nowrap;
+  will-change: box-shadow, transform;
+}
+
+.contact {
+  display: inline-block;
+  margin-top: 1.5rem;
+  vertical-align: top;
+}
+
+.button:hover {
+  box-shadow: 0 1.5rem 3rem rgba(0, 0, 0, 0.2);
+  transform: scale(1.02) translateY(-4px);
+}
+
+.button:active {
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.3);
+  transform: scale(0.98) translateY(-2px);
+}
+
+.lol{
+  text-align: center;
+  background-color: #e9ecef;
+  position: relative;
+  margin-bottom: 50px;
+}
+.lol2{
+  text-align: center;
+  background-color: #e9ecef;
+  position: relative;
+  margin-bottom: 20px;
+}
+.lol h1{
+  color: #343a40;
+  font-size: 2rem;
+}
+.lol2 h1{
+  color: #343a40;
+  font-size: 2rem;
+}
+.me{
+ text-align: left;
+  display: flex;
+  flex-direction: row;
+  min-height: 50vh;
+  position: relative;
+}
+
+.bottom{
+  text-align: center;
+  position: relative;
+  color: #343a40;
+  font-size: 1rem;
+}
+
+.card{
+  box-shadow: 0 10px 10px 0 rgba(0,0,0,0.2);
+  width: 30%;
+  background-color: #343a40;
+  min-height: 30vh;
+  position: relative;
+}
+
+.card2{
+  box-shadow: 0 10px 10px  0 rgba(0,0,0,0.2);
+  width: 30%;
+  background-color: #343a40;
+  min-height: 40vh;
+  position: relative;
+}
+
+.me h1{
+text-align: center;
+font-size: 1.5rem;
+margin-bottom: 0.5rem;
+background-color: #6c757d;
+color: white;
+}
+
+.me p {
+  font-size: 1.25rem;
+  margin-bottom: 0.25rem;
+  padding: 2px 25px;
+  color: white;
+  }
+  .hr2 {
+    background-color: black;
+    border: none;
+    content: "";
+    height: 1px;
+    
+    margin-top: 1.5rem;
+    width: 25rem;
+ 
+  }
+/* 4. Responsiveness */
+@media screen and (max-width: 799px) {
+  .content {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 5rem 3rem;
+  }
+  .side {
+    margin-bottom: 3rem;
+    width: 100%;
+  }
+  .me{
+    flex-direction: column;
+    align-items: center;
+  }
+  .card{
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    width: 80%;
+  }
+  .card2{
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    width: 80%;
+  }
+}
+
+@media screen and (min-width: 800px) {
+  .content {
+    align-items: center;
+    justify-content: space-around;
+    justify-content: space-evenly;
+    padding: 4rem;
+  }
+  .side {
+    flex-grow: 0;
+    flex-shrink: 0;
+    height: 20rem;
+    margin-left: 4rem;
+    order: 2;
+    width: 20rem;
+  }
+  .about {
+    flex-grow: 1;
+    flex-shrink: 1;
+  }
+  .me{
+    align-items: center;
+   
+    justify-content: space-around;
+    justify-content: space-evenly;
+  }
+}
