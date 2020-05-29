@@ -25,10 +25,22 @@ SECRET_KEY = '3od%h1a@!l3@&8e=c4%qpi#@3!h*c_$d6ynla%uf%y=1@z7m3e'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ENVIRONMENT = 'production'
 
+if ENVIRONMENT == 'production': 
+    SECURE_BROWSER_XSS_FILTER = True # new
+    X_FRAME_OPTIONS = 'DENY' # new
+    SECURE_SSL_REDIRECT = True 
+    SECURE_HSTS_SECONDS = 3600 # new 
+    SECURE_HSTS_INCLUDE_SUBDOMAINS = True # new 
+    SECURE_HSTS_PRELOAD = True # new 
+    SECURE_CONTENT_TYPE_NOSNIFF = True # new
+    SESSION_COOKIE_SECURE = True # new 
+    CSRF_COOKIE_SECURE = True # new
+    SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
+    DEBUG = False
 
-# Application definition
+ALLOWED_HOSTS = ['*']
 
 INSTALLED_APPS = [
     'django.contrib.admin',
@@ -41,6 +53,7 @@ INSTALLED_APPS = [
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
+     'whitenoise.middleware.WhiteNoiseMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
